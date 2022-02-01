@@ -1,0 +1,24 @@
+{
+  "type": "module",
+  "version": "1.0.0",
+  "name": "uvu-c8-reproduce",
+  "description": "Issue in c8 with uvu loaders",
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
+  "scripts": {
+    "c8": "npx --yes c8 uvu -r tsm -r esm tests",
+    "build": "rm -rf build && tsc -b"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github:thejohnhoffer/uvu-c8-reproduce"
+  },
+  "author": "John T. Hoffer",
+  "license": "MIT",
+  "devDependencies": {
+    "esm": "^3.2.25",
+    "tsm": "^2.2.1",
+    "typescript": "^4.5.5",
+    "uvu": "^0.5.3"
+  }
+}
