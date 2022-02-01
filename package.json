@@ -1,12 +1,11 @@
 {
-  "type": "module",
   "version": "1.0.0",
   "name": "uvu-c8-reproduce",
   "description": "Issue in c8 with uvu loaders",
   "main": "build/index.js",
   "types": "build/index.d.ts",
   "scripts": {
-    "c8": "npx --yes c8 uvu -r tsm -r esm tests",
+    "c8": "npx --yes c8 uvu -r tsm tests",
     "build": "rm -rf build && tsc -b"
   },
   "repository": {

@@ -1,6 +1,6 @@
-import { suite } from "uvu";
-import * as assert from "uvu/assert";
-import { toResult } from "../src/index.ts";
+const { suite } = require("uvu");
+const assert = require("uvu/assert");
+const { toResult } = require("../src/index.ts");
 
 const TestExample = suite("test example");
 TestExample("Example renders", async () => {
